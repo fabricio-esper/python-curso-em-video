@@ -1,4 +1,2 @@
 m = float(input("Quantos metros tem? "))
-cm = int(m * 100)
-mm = int(m * 1000)
-print(f"{m}m é igual a {cm}cm e {mm}mm.")
+print(f"{m}m é igual a {m*100:.2f}cm e {m*1000:.2f}mm.")
