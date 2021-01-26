@@ -1,3 +1,7 @@
 r = float(input("Quantos reais (BRL) você tem? "))
 print("")
-print(f"Você pode comprar {r/3.27:.2f} USD.")
+print("Você pode comprar:")
+print(f"{r/5.35:.2f} USD")
+print(f"{r/6.48:.2f} EUR")
+print(f"{r/0.05:.2f} JPY")
+print(f"{r/172574:.10f} BTC")
