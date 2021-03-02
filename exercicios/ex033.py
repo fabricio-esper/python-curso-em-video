@@ -11,5 +11,5 @@ if b>a and b>c:
     maior = b
 if c>a and c>b:
     maior = c
-print(f"O menor valor digitado foi {menor}")
-print(f"O maior valor digitado foi {maior}")
+print(f"O menor valor digitado foi \033[31m{menor}\033[m")
+print(f"O maior valor digitado foi \033[32m{maior}\033[m")
