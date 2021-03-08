@@ -18,4 +18,4 @@ elif imc >= 30 and imc < 40:
     print("Entre 30 e 40: Obesidade")
 else:
     print("Acima de 40: Obesidade mórbida")
-#testando git :)
+    
