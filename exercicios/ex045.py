@@ -19,3 +19,5 @@ elif n == 1 and r == 2 or n == 2 and r == 3 or n == 3 and r == 1:
     print("Você ganhou!!")
 elif n == 1 and r == 3 or n == 3 and r == 2 or n == 2 and r == 1:
     print("Você perdeu!!")
+else:
+    print("Opção inválida.")

@@ -20,3 +20,5 @@ elif r == 4:
     q = int(input("Vai pagar em quantas vezes? "))
     par = (p + (0.2*p)) / q
     print(f"O pagamento em {q}x no cartão ficará c/ juros {par:.2f} BRL a parcela")
+else:
+    print("Opção inválida.")
