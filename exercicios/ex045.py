@@ -1,23 +1,22 @@
 print("Vamos jogar Pedra, Papel e tesoura!")
 from random import randint
-n = randint(1,3)
-print("Pedra = 1")
-print("Papel = 2")
-print("Tesoura = 3")
+n = randint(0,2)
+itens = ("Pedra", "Papel", "Tesoura")
+print("""Pedra = 0
+Papel = 1
+Tesoura = 2""")
 r = int(input("Escolha: "))
 
-if n == 1:
-    print("PEDRA!!")
-elif n == 2:
-    print("PAPEL!!")
-elif n == 3:    
-    print("TESOURA!!")
+print("-="*11)
+print(f"Computador jogou {itens[n]}")
+print(f"Jogador jogou {itens[r]}")
+print("-="*11)
 
-if n == 1 and r == 1 or n == 2 and r == 2 or n == 3 and r == 3:
+if n == 0 and r == 0 or n == 1 and r == 1 or n == 2 and r == 2:
     print("Isso é um empate!!")
-elif n == 1 and r == 2 or n == 2 and r == 3 or n == 3 and r == 1:
+elif n == 0 and r == 1 or n == 1 and r == 2 or n == 2 and r == 0:
     print("Você ganhou!!")
-elif n == 1 and r == 3 or n == 3 and r == 2 or n == 2 and r == 1:
+elif n == 0 and r == 2 or n == 2 and r == 1 or n == 1 and r == 0:
     print("Você perdeu!!")
 else:
     print("Opção inválida.")
