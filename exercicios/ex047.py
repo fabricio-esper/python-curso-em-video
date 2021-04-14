@@ -1,3 +1,4 @@
-for p in range(0, 51):
+for p in range(1, 51):
     if p % 2 == 0:
-        print(p)
+        print(p, end=' ')
+ 
