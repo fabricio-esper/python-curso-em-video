@@ -1,6 +1,15 @@
-p = int(input('Digite um número inteiro: '))
-for n in range(0,100):
-    if p % p == 0 and p % n != 0 and p % 1 == 0:
-        print(f'O número {p} é primo')
+n = int(input('Digite um número inteiro: '))
+t = 0
+for c in range(1, n+1):
+    if n % c == 0:
+        print('\033[33m', end='')
+        t += 1
     else:
-        print(f'O número {p} não é primo')
+        print('\033[31m', end='')
+    print(f'{c} ', end='')
+print(f'\n\033[mO número {n} foi divisível {t} vezes')
+if t == 2:
+    print('E por isso ele É PRIMO')
+else:
+    print('E por isso ele NÃO É PRIMO')
+    
