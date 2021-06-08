@@ -4,6 +4,6 @@ while True:
     if VAL < 0:
         break
     for CONT in range(1, 11):
-        print(f'{VAL} x  {CONT} = {VAL*CONT}')
+        print(f'{VAL} x {CONT} = {VAL*CONT}')
     print('-' * 30)
-print('PROGRAMA TABUADO ENCERRADO. Volte sempre!')
+print('PROGRAMA TABUADA ENCERRADO. Volte sempre!')
